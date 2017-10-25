@@ -1,5 +1,5 @@
 # ShowCaseView
-一个新手指引的View
+
 
 ##demo
 <table sytle="border: 0px;">
@@ -8,7 +8,7 @@
 </tr>
 </table>
 
-##使用
+##use
 ```java
          View guideView = LayoutInflater.from(this).inflate(R.layout.showcase_content_one, null, false);
          View target = findViewById(R.id.target_one);
@@ -22,16 +22,33 @@
         
 ```
 
-## 支持拓展
+## Support for expansion
 
-###拓展绘制高亮区域的样式
+###Extends the style of the highlighted area
 >setShape(IShape shape)
 
-###拓展布局控制
+###Expand layout control
 >setLayoutController(ILayoutController layoutController)
 
-###拓展显示和隐藏的动画
+###Expand the display and hide the animation
 >setAnimationController(IAnimationController animationController)
 
+Add it in your root build.gradle at the end of repositories:
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
 
+Step 2. Add the dependency
 
+```
+dependencies {
+	        compile 'com.github.mirshahbazi:ShowCaseView:-SNAPSHOT'
+	}
+```
+
+## Edit By MAM :)
